@@ -56,9 +56,10 @@ var template = "<div class=\"tinyeditor\">" +
 	"<div style=\"clear: both;\"></div>" +
     "</div>" +
     "<div class=\"sizer\" ce-resize>" +
+    "<hr/>" +
 	"<textarea data-placeholder-attr=\"\" style=\"-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; resize: none; width: 100%; height: 100%;\" ng-show=\"editMode\" ng-model=\"content\"></textarea>        <iframe style=\"-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 100%;\" ng-hide=\"editMode\" wframe=\"\" ng-model=\"content\"></iframe>    </div>" +
 	"<div class=\"tinyeditor-footer\">" +
-	"<div ng-switch=\"editMode\" ng-click=\"editMode = !editMode\" class=\"toggle\"><span ng-switch-when=\"true\">wysiwyg</span><span ng-switch-default>source</span></div>" + 
+	"<div ng-switch=\"editMode\" ng-click=\"editMode = !editMode\" class=\"toggle\"><span ng-switch-when=\"true\">Preview</span><span ng-switch-default>Source</span></div>" + 
     "</div>" +
 "</div>";
 
